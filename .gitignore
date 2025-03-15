@@ -13,3 +13,4 @@ wheels/
 .devbox
 .sesskey
 .ruff_cache
+.vercel
