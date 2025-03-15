@@ -1,0 +1,17 @@
+[project]
+name = "meatly"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "monsterui>=1.0.11",
+    "pre-commit>=4.1.0",
+    "python-fasthtml>=0.12.4",
+    "ruff>=0.9.10",
+]
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
