@@ -225,15 +225,21 @@ name = "meatly"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "pre-commit" },
     { name = "python-fasthtml" },
+]
+
+[package.dev-dependencies]
+lint = [
+    { name = "pre-commit" },
     { name = "ruff" },
 ]
 
 [package.metadata]
-requires-dist = [
+requires-dist = [{ name = "python-fasthtml", specifier = ">=0.12.4" }]
+
+[package.metadata.requires-dev]
+lint = [
     { name = "pre-commit", specifier = ">=4.1.0" },
-    { name = "python-fasthtml", specifier = ">=0.12.4" },
     { name = "ruff", specifier = ">=0.9.10" },
 ]
 

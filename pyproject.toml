@@ -5,12 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "pre-commit>=4.1.0",
     "python-fasthtml>=0.12.4",
-    "ruff>=0.9.10",
 ]
 
 
 [tool.pyright]
 venvPath = "."
 venv = ".venv"
+
+[dependency-groups]
+lint = [
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.10",
+]
